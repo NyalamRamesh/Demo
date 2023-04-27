@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="../6April23/Subscribe.css">
+    <script src="../6April23/Subscribe.js" defer></script>
+</head>
+<body>
+    <button id="subscribeBut" value="Subscribe" onclick="subscribe()"><img 
+       id="bell" src="../6April23/SubBell1.png"><span id="status">Subscribe</span>
+    <img id="arrow" src="../6April23/Arrow.png""></button>
+
+    <div id="window">
+         <button onblur="remove()" onmousedown="allBell()" class="subbut"><img class="subbell" id="a" src="../6April23/AllBell.png"><span class="substatus">All</span></button>
+         <button onblur="remove()" onmousedown="normalbell()" class="subbut"><img class="subbell" id="b" src="../6April23/SubBell1.png"><span class="substatus">Personalised</span></button>
+         <button onblur="remove()" onmousedown="nonebell()" class="subbut"><img class="subbell" id="c" src="../6April23/UnSub.png"><span class="substatus">None</span></button>
+         <button onblur="remove()" onmousedown="unsub()" class="subbut"><img class="subbell" id="d" src="../6April23/Person.png"><span class="substatus">Unsubscribe</span></button>
+
+    </div>
+    <div id="unsubcribe">
+           <h6 id="msg">Unsubscribe from this Channel?</h6>
+           <button id="cancel" onmousedown="remove()">Cancel</button>
+           <button id="unsub"  onmousedown="unsubscribe()">Unsubscribe</button>
+    </div>
+</body>
+</html>
